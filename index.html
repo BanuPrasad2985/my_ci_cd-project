@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>My CI/CD Project</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -13,20 +13,24 @@
 
   <section>
     <h2>Projects</h2>
-    <ul>
-      <li>Project 1: Weather App</li>
-      <li>Project 2: To-Do List</li>
-      <li>Project 3: Docker App</li>
-      <li>Project 4: Job List</li>
-    </ul>
+    <form id="contact-form">
+      <label for="project">Select a Project:</label>
+      <select id="project" required>
+        <option value="" disabled selected>Select your project</option>
+        <option value="Weather App">Project 1: Weather App</option>
+        <option value="To-Do List">Project 2: To-Do List</option>
+        <option value="Docker App">Project 3: Docker App</option>
+        <option value="Job List">Project 4: Job List</option>
+      </select>
+    </form>
   </section>
 
   <section>
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message"></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
